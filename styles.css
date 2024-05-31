@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.story-thumbnails {
+    text-align: center;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.story-thumbnails h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.thumbnails-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    flex: 0 0 auto; /* Ensure thumbnails are inline and scrollable */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-viewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.story {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 90%; /* Ensures it fits within different screen sizes */
+    max-width: 600px; /* Set a maximum width */
+    height: calc(100vh - 20px); /* Maintain aspect ratio and fit within the viewport height */
+    max-height: 90vh; /* Ensure it doesn't exceed the viewport height */
+    background: #000;
+    margin: 10px 0; /* Center the story vertically within the viewer */
+}
+
+.media-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-container img, .media-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the media content maintains aspect ratio and fits within the container */
+}
+
+.progress-bar {
+    position: absolute;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1001; /* Ensure it's above the media content */
+    margin-top: 10px; /* Add margin to place it properly */
+}
+
+.category-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1001; /* Ensure it's above the media content */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure it's above all other elements */
+}
+
+.cta-btn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4500;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1002; /* Ensure it's above all other elements */
+}
+
+.pause-resume-btn {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure it's above all other elements */
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999; /* Ensure navigation areas are behind the close button */
+}
+
+.nav-left, .nav-right {
+    width: 33.33%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.advertisement-story .cta-btn {
+    display: block; /* Ensure the CTA button is visible */
+}
+
+.advertisement-story {
+    display: none; /* Ensure it's hidden initially */
+    flex-direction: column;
+    position: relative;
+    width: 90%; /* Ensures it fits within different screen sizes */
+    max-width: 600px; /* Set a maximum width */
+    height: calc(100vh - 20px); /* Maintain aspect ratio and fit within the viewport height */
+    max-height: 90vh; /* Ensure it doesn't exceed the viewport height */
+    background: #000;
+    margin: 10px 0; /* Center the story vertically within the viewer */
+}
+
+.advertisement-story .media-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertisement-story .media-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the media content maintains aspect ratio and fits within the container */
+}
+
+.advertisement-story .cta-btn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4500;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1002; /* Ensure it's above all other elements */
+}

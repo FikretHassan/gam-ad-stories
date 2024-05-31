@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories & GAM Advertising Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+</head>
+<body>
+    <div id="story-blocks">
+        <div class="story-thumbnails" data-category="default">
+            <h2>All Stories</h2>
+            <div class="thumbnails-container"></div>
+        </div>
+        <div class="story-thumbnails" data-category="sport">
+            <h2>Sport Stories</h2>
+            <div class="thumbnails-container"></div>
+        </div>
+        <div class="story-thumbnails" data-category="news">
+            <h2>News Stories</h2>
+            <div class="thumbnails-container"></div>
+        </div>
+    </div>
+
+    <div class="story-viewer">
+        <div class="story" data-duration="3000" data-category="default,sport" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="1.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">Sport</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="0" data-category="default,news" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk" data-thumbnail="thumb.jpg">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <video src="video1.mp4" autoplay muted playsinline></video>
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">News</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,force" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="2.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">All</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,sport" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="3.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">Sport</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,news" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="4.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">Test</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,news" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="5.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">News</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,sport" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="6.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">Test</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,news,sport" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="7.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">News</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <div class="story" data-duration="3000" data-category="default,news" data-cta-text="Learn More" data-cta-url="https://www.google.co.uk">
+            <div class="progress-bar"></div>
+            <div class="media-container">
+                <img src="8.jpg" alt="Story Image 1">
+                <div class="navigation">
+                    <div class="nav-left"></div>
+                    <div class="nav-right"></div>
+                </div>
+            </div>
+            <div class="category-indicator">Test</div>
+            <button class="close-btn">&times;</button>
+            <button class="cta-btn">Learn More</button>
+            <button class="pause-resume-btn">Pause</button>
+        </div>
+
+        <!-- Ad Slot for GPT.js -->
+        <div id="div-gpt-adtech" style="display: none;"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="ads.js"></script>
+</body>
+</html>
